@@ -85,9 +85,7 @@ const vue_app = Vue.createApp({
                               break;
 
                   }
-                  return {
-                        date: month + dateArray[2] + dateArray[0]
-                  }
+                  return month + " " + dateArray[2] + ", " + dateArray[0];    
             },
             like: function(index) {
                   this.movies[index].likes += 1;
@@ -96,12 +94,18 @@ const vue_app = Vue.createApp({
                   this.movies[index].dislikes += 1;
             },
             posterClick: function(index){
-                  let aaa = this.movies[index].posters.length
-                  console.log(aaa);
-                  this.movies[index].posterindex += 1;
-                  if(this.movies[index].posterindex >= aaa){
-                        this.movies[index].posterindex == 0;
+                  let ind = this.movies[index].posters.length
+                  if(this.movies[index].posterindex >= ind - 1){
+                        this.movies[index].posterindex = 0;
+                  }else{
+                        this.movies[index].posterindex += 1;
                   }
+            },
+            timeText: function(minutes) {
+                  let hours = minutes / 60;
+                  let hour = Math.trunc(hours);
+                  let mins = minuets % 60;
+                  return hour + "h " + mins + "m";
             }
 
       }
