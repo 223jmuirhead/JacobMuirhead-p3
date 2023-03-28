@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Mad God",
+            "iscore": 6.8,
+            "rating": "R",
+            "runtime": 83,
+            "released": [2022, 6, 16],
+            "country": "USA",
+            "posters": ["img/schindlerslist.jpg"],
+            "imdb": "https://www.imdb.com/title/tt15090124/",
+            "website": "https://www.madgodmovie.com/",
+            "likes": 78000,
+            "dislikes": 23,
+            "posterindex": 0
+      },
+      {
+            "title": "No Country For Old Men",
+            "iscore": 8.2,
+            "rating": "R",
+            "runtime": 122,
+            "released": [2007, 11, 9],
+            "country": "USA",
+            "posters": ["img/schindlerslist.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0477348/",
+            "website": "https://www.miramax.com/movie/no-country-for-old-men/",
+            "likes": 1201,
+            "dislikes": 16,
+            "posterindex": 0
+      },
+      {
+            "title": "Fight Club",
+            "iscore": 8.8,
+            "rating": "R",
+            "runtime": 139,
+            "released": [1999, 11, 11],
+            "country": "USA",
+            "posters": ["img/schindlerslist.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0137523/?ref_=fn_al_tt_1",
+            "website": "https://www.miramax.com/movie/no-country-for-old-men/",
+            "likes": 1999,
+            "dislikes": 1111,
+            "posterindex": 0
       }
 ]
