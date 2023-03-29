@@ -32,8 +32,7 @@
 
 	    <div class="main">
 			<div class="row">
-			<span v-for="(movie, index) in movies">
-				<div class="col-md-6">
+				<div v-for="(movie, index) in movies" class="col-md-6">
 	            <div class="thumbnail">
 						<img class="poster img-fluid" :src="movies[index].posters[movies[index].posterindex]" @click="posterClick(index)"/>
 						<div class="imageInfo">Poster {{movies[index].posterindex + 1}} of {{movies[index].posters.length}}</div>
@@ -49,8 +48,7 @@
 			              <p class="dislikes" @click="dislike(index)"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes}}</p>
 			            </div>
 					</div>
-	            </div>
-			</span>		
+	            </div>	
 		</div>
 	        </div>
 		
